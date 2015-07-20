@@ -223,6 +223,27 @@
   #define PINOUT_PCMSK     PCMSK2 // Pin change interrupt register
   #define PINOUT_MASK ((1<<PIN_RESET)|(1<<PIN_FEED_HOLD)|(1<<PIN_CYCLE_START))
 
+  // Tony's additions
+  #define TONY_DDR            DDRC
+  #define TONY_PIN            PINC
+  #define TONY_PORT           PORTC
+  #define TONY_XUP_BUTTON     0 // MEGA2560 Digital Pin 37
+  #define TONY_XDOWN_BUTTON   1 // MEGA2560 Digital Pin 36
+  #define TONY_YUP_BUTTON     2 // MEGA2560 Digital Pin 35
+  #define TONY_YDOWN_BUTTON   3 // MEGA2560 Digital Pin 34
+  #define TONY_ZUP_BUTTON     4 // MEGA2560 Digital Pin 33
+  #define TONY_ZDOWN_BUTTON   5 // MEGA2560 Digital Pin 32
+  #define TONY_MASK ((1<<TONY_XUP_BUTTON)|(1<<TONY_XDOWN_BUTTON)|(1<<TONY_YUP_BUTTON)|(1<<TONY_YDOWN_BUTTON)|(1<<TONY_ZUP_BUTTON)|(1<<TONY_ZDOWN_BUTTON))
+
+  #define TONY_MOVESPEED_DDR  DDRK
+  #define TONY_MOVESPEED_PIN  PINK
+  #define TONY_MOVESPEED_PORT PORTK
+  #define TONY_MOVESPEED_BIT  4 // MEGA2560 Analog Pin 12
+  #define TONY_MOVESPEED_MASK (1<<TONY_MOVESPEED_MASK)
+
+
+  // End of Tony's additions
+
   // Define probe switch input pin.
   #define PROBE_DDR       DDRK
   #define PROBE_PIN       PINK
