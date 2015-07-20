@@ -32,6 +32,12 @@ void system_init()
   PINOUT_PORT |= PINOUT_MASK;   // Enable internal pull-up resistors. Normal high operation.
   PINOUT_PCMSK |= PINOUT_MASK;  // Enable specific pins of the Pin Change Interrupt
   PCICR |= (1 << PINOUT_INT);   // Enable Pin Change Interrupt
+
+  // Tony's additions
+  TONY_DDR $= ~(TONY_MASK);   // Configure as input pins
+  TONY_PORT |= TONY_MASK;     // Enable internal pull-up resistors. Normal high operation.
+
+  // End of Tony's additions
 }
 
 
