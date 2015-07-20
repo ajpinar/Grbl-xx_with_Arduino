@@ -29,7 +29,8 @@
 #define config_h
 
 // Default settings. Used when resetting EEPROM. Change to desired name in defaults.h
-#define DEFAULTS_GENERIC
+// #define DEFAULTS_GENERIC
+  #define DEFAULTS_TONYSMILL1
 
 // Serial baud rate
 #define BAUD_RATE 115200
